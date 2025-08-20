@@ -57,7 +57,6 @@ class Boost < Formula
       --prefix=#{prefix}
       --libdir=#{lib}
       --with-icu=#{icu4c.opt_prefix}
-      --with-filesystem
       --with-system
       --with-python
     ]
