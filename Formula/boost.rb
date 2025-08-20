@@ -56,6 +56,9 @@ class Boost < Formula
       --prefix=#{prefix}
       --libdir=#{lib}
       --with-icu=#{icu4c.opt_prefix}
+      --with-filesystem
+      --with-system
+      --with-python
     ]
 
     # Handle libraries that will not be built.
@@ -75,6 +78,9 @@ class Boost < Formula
       -j#{ENV.make_jobs}
       --layout=system
       --user-config=user-config.jam
+      --with-filesystem
+      --with-python
+      --with-system
       install
       threading=multi
       link=shared,static
