@@ -62,7 +62,7 @@ class Boost < Formula
     ]
 
     # Handle libraries that will not be built.
-    without_libraries = ["python", "mpi"]
+    without_libraries = ["mpi"]
 
     # Boost.Log cannot be built using Apple GCC at the moment. Disabled
     # on such systems.
