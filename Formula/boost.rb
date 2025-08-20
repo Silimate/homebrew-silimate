@@ -57,8 +57,6 @@ class Boost < Formula
       --prefix=#{prefix}
       --libdir=#{lib}
       --with-icu=#{icu4c.opt_prefix}
-      --with-system
-      --with-python
     ]
 
     # Handle libraries that will not be built.
