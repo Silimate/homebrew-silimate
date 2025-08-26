@@ -10,16 +10,16 @@ class Gtkx3 < Formula
     regex(/gtk\+[._-](3\.([0-8]\d*?)?[02468](?:\.\d+)*?)\.t/i)
   end
 
-  bottle do
-    rebuild 1
-    sha256 arm64_sequoia: "6aca43b89a0ea1d910a7a3e6ec9d17b387f562208880efb2d1e0671a691cf3ec"
-    sha256 arm64_sonoma:  "6098a780bf4f51b57620d05a62e2318edc8b75ea7bedc67a9d28ad90e27651ef"
-    sha256 arm64_ventura: "b2cfc5ed7e889d29b2f7b49d78a87af0505dfceb5ccd76cd1c08af2bac5db44b"
-    sha256 sonoma:        "c0efd3d0e28212aeb25189685cdfb5a3fbb85fabc4700abbf922706badd15e17"
-    sha256 ventura:       "912e58bc9f73495c086de2b289dd69926be1b3403b22190009c608b00e604e02"
-    sha256 arm64_linux:   "c46dbee2b057b33d65c345ddc7d9581ba9f585b177b30db73c3c1132f3ba10b8"
-    sha256 x86_64_linux:  "8ebaea8114ba92ae5ce85c1b832912dcc6011bda220940255d65ef704a0cf83e"
-  end
+  # bottle do
+  #   rebuild 1
+  #   sha256 arm64_sequoia: "6aca43b89a0ea1d910a7a3e6ec9d17b387f562208880efb2d1e0671a691cf3ec"
+  #   sha256 arm64_sonoma:  "6098a780bf4f51b57620d05a62e2318edc8b75ea7bedc67a9d28ad90e27651ef"
+  #   sha256 arm64_ventura: "b2cfc5ed7e889d29b2f7b49d78a87af0505dfceb5ccd76cd1c08af2bac5db44b"
+  #   sha256 sonoma:        "c0efd3d0e28212aeb25189685cdfb5a3fbb85fabc4700abbf922706badd15e17"
+  #   sha256 ventura:       "912e58bc9f73495c086de2b289dd69926be1b3403b22190009c608b00e604e02"
+  #   sha256 arm64_linux:   "c46dbee2b057b33d65c345ddc7d9581ba9f585b177b30db73c3c1132f3ba10b8"
+  #   sha256 x86_64_linux:  "8ebaea8114ba92ae5ce85c1b832912dcc6011bda220940255d65ef704a0cf83e"
+  # end
 
   depends_on "docbook" => :build
   depends_on "docbook-xsl" => :build
